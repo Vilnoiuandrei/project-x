@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  /* background-color: rgb(17, 24, 39);
+  color: white; */
+  scroll-behavior: smoth;
+}
+.buttonEfect {
+  z-index: 100;
+  display: block;
+  align-items: center;
+  appearance: none;
+  border-style: none;
+  box-shadow:
+    rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  cursor: pointer;
+  fill: currentcolor;
+  letter-spacing: 0.25px;
+  max-width: 100%;
+
+  transition:
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms,
+    transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  background: 500ms linear;
+}
+button:hover {
+  transform: scale(1.02);
+}
+
+button:active {
+  box-shadow:
+    0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
+  transform: translateY(2px);
+}
