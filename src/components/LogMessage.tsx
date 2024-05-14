@@ -7,7 +7,7 @@ function LogMessage({ children }: LogMessageProp) {
     <div className=" grid h-screen place-items-center">
       <div>
         <p className=" mb-10 text-center text-2xl md:mb-16 md:text-2xl">
-          Log In successful!
+          Log in successful!
         </p>
         {children}
       </div>
