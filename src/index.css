@@ -14,7 +14,7 @@ html {
   scroll-behavior: smoth;
 }
 body {
-  font-family: monospace, sans-serif;
+  font-family: "Teachers", sans-serif;
 }
 .buttonEfect {
   z-index: 100;
