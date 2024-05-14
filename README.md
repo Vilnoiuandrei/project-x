@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+# Car Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Car Search App repository! This application allows users to search for cars by manufacturer or model. It utilizes React, TypeScript, and Tailwind CSS for frontend development, ensuring a smooth and responsive user experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Search Cars:** Search for cars by manufacturer or model.
+- **JWT Authentication:** Secure login functionality using JWT authentication.
+- **React Query:** Efficiently handle search queries and API requests.
+- **React Context:** Manage global state for user authentication.
+- **Responsive Design:** Mobile-first design approach with Tailwind CSS ensures responsiveness across devices.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React:** JavaScript library for building user interfaces.
+- **TypeScript:** Typed superset of JavaScript for improved developer productivity.
+- **Tailwind CSS:** Utility-first CSS framework for quickly styling applications.
+- **React Query:** Library for managing and caching asynchronous data in React applications.
+- **JWT Authentication:** Secure user authentication mechanism using JSON Web Tokens.
+- **React Context:** Context API for managing global state in React applications.
 
-- Configure the top-level `parserOptions` property like this:
+## Usage
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Log in to your account using your credentials.
+2. Search for cars by entering the manufacturer or model in the search bar.
+3. View the list of cars that match your search criteria.
+4. Click on a car to view more details.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
