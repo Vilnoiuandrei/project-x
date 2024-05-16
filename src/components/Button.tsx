@@ -7,7 +7,7 @@ function Button({ children, onClick }: ButtonProps) {
   return (
     <button
       type="submit"
-      className="buttonEfect mb-4 mt-5  h-12 w-80   rounded-xl bg-red-600 text-2xl hover:text-gray-300"
+      className="buttonEfect mb-4 mt-5  h-16 w-96  rounded-xl bg-red-700 text-2xl text-white hover:text-gray-300"
       onClick={onClick}
     >
       {children}

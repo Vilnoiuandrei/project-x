@@ -46,7 +46,7 @@ function Search({
         setManufacturer={setManufacturer}
       />
       <input
-        className=" ml-5 h-10 w-80 rounded-lg border-2 bg-gray-200 md:h-14 md:w-96"
+        className=" ml-5 h-10 w-80 rounded-lg border-2 bg-gray-200 text-red-800 md:h-14 md:w-96"
         id="search"
         placeholder="Search car model.."
         type="text"
@@ -64,17 +64,20 @@ function SelectManufacturer({
   return (
     <div>
       <select
-        className="h-10 rounded-lg border-2 bg-gray-200 text-gray-500 md:h-14 md:w-96"
+        className="h-10 rounded-lg border-2 bg-gray-200  md:h-14 md:w-96"
         id="select"
         value={manufacturer}
         onChange={(e) => {
           setManufacturer(e.target.value);
         }}
       >
-        <option value="">Select a manufacturer</option>
+        <option value="">Search by manufacturer</option>
+        <option value="Audi">Audi</option>
         <option value="BMW">BMW</option>
+        <option value="Mercedes-Benz">Mercedes-Benz</option>
+        <option value="Ferrari">Ferrari</option>
         <option value="Porsche">Porsche</option>
-        <option value="VW">Volkswagen</option>
+        <option value="Volkswagen">Volkswagen</option>
         <option value="Toyota">Toyota</option>
       </select>
     </div>

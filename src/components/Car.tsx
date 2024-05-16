@@ -17,10 +17,10 @@ interface CarProps {
 
 function Car({ car }: CarProps) {
   return (
-    <Link to={`/car/${car._id}`}>
-      <li
-        className="   flex h-96  w-screen cursor-pointer flex-col  items-center justify-center border-4 border-black bg-black text-white  lg:w-full"
-        key={car._id}
+    <li key={car._id}>
+      <Link
+        to={`/car/${car._id}`}
+        className="flex h-96  w-screen cursor-pointer flex-col  items-center justify-center border-4 border-black bg-black text-white  lg:w-full"
       >
         <img
           className="h-5/6 w-full object-cover"
@@ -28,8 +28,8 @@ function Car({ car }: CarProps) {
           alt={`${car.manufacturer}${car.model}poster`}
         />
         <h3 className="text-2xl md:text-4xl">{`${car.manufacturer} ${car.model} ${car.variant} ${car.year}`}</h3>
-      </li>
-    </Link>
+      </Link>
+    </li>
   );
 }
 

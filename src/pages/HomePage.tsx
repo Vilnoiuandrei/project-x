@@ -3,7 +3,7 @@ function Homepage() {
     <div
       className="h-screen font-semibold"
       style={{
-        backgroundImage: "url(/img/f40img.png)",
+        backgroundImage: "url(/img/ferrarif40cover.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

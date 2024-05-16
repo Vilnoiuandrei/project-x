@@ -5,6 +5,8 @@ import Loader from "../components/Loader";
 import { Navigate } from "react-router-dom";
 import { LogInContex } from "../App";
 import { useContext } from "react";
+import Specifications from "../components/Specifications";
+import CarDesciption from "../components/CarDesciption";
 
 async function fetchCar(jwtToken: string, id: string) {
   const res = await fetch(
@@ -74,12 +76,13 @@ function CarDetailPage() {
 
       <div className="flex justify-center">
         <div className="max-w-1500px grid  grid-cols-2">
-          <img
-            className="w-ws col-start-1 col-end-3 row-start-1 border-2"
-            src={`/img/${car.imageCover}`}
-            alt={`${car.manufacturer}${car.model}poster`}
-          />
-
+          <div className="w-ws col-start-1 col-end-3 row-start-1 flex justify-center">
+            <img
+              className="border-2"
+              src={`/img/${car.imageCover}`}
+              alt={`${car.manufacturer}${car.model}poster`}
+            />
+          </div>
           {car.images.map((image: string, index: number) => (
             <img
               key={index}
@@ -88,31 +91,8 @@ function CarDetailPage() {
               className="col-start-1  col-end-3  mt-1 w-full border border-gray-800 shadow-lg lg:col-auto"
             />
           ))}
-
-          <div className="col-start-1 col-end-3 row-start-3 px-4 lg:col-end-2">
-            <h2 className=" h-10  border-b border-black text-center text-2xl md:h-14 md:text-4xl lg:text-5xl ">
-              Specification
-            </h2>
-            <ul className="ml-6 list-disc text-2xl md:text-4xl lg:text-5xl">
-              <li>{`Manufacturer: ${car.manufacturer}`}</li>
-              <li>{`Model: ${car.model}`}</li>
-              <li>{`Variant: ${car.variant}`}</li>
-              <li>{`Year: ${car.year}`}</li>
-              <li>{`Power: ${car.horsePower}hp`}</li>
-              <li>{`Top Speed: ${car.topSpeed}kph`}</li>
-              <li>{`0-100: ${car.zeroToHundred}s`}</li>
-              <li>{`Price: ${car.price}€`}</li>
-            </ul>
-          </div>
-
-          <div className="col-start-1  col-end-3 row-start-2 mt-2 px-4 lg:col-start-2">
-            <h3 className="border-b  border-black text-center text-2xl  md:text-4xl lg:text-5xl">
-              Description
-            </h3>
-            <p className="mt-4 text-2xl md:text-4xl lg:text-5xl">
-              {car.description}
-            </p>
-          </div>
+          <CarDesciption car={car} />
+          <Specifications car={car} />
         </div>
       </div>
     </div>
