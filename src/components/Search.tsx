@@ -40,13 +40,13 @@ function Search({
   }, [inputEl]);
 
   return (
-    <div className="flex  h-14 items-center justify-center bg-red-800 text-lg md:h-20 md:text-2xl">
+    <div className="flex  h-20 items-center justify-center bg-red-800 text-lg md:h-20 md:text-2xl">
       <SelectManufacturer
         manufacturer={manufacturer}
         setManufacturer={setManufacturer}
       />
       <input
-        className=" ml-5 h-10 w-80 rounded-lg border-2 bg-gray-200 text-red-800 md:h-14 md:w-96"
+        className=" ml-5 h-12 w-80 rounded-lg border-2 bg-gray-200 text-3xl text-red-800 md:h-14 md:w-96"
         id="search"
         placeholder="Search car model.."
         type="text"
@@ -64,7 +64,7 @@ function SelectManufacturer({
   return (
     <div>
       <select
-        className="h-10 rounded-lg border-2 bg-gray-200  md:h-14 md:w-96"
+        className="h-12 rounded-lg border-2 bg-gray-200  md:h-14 md:w-96"
         id="select"
         value={manufacturer}
         onChange={(e) => {

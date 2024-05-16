@@ -23,7 +23,7 @@ function Input({
       type={type}
       value={value}
       onChange={onChange}
-      className="mb-6  h-16 w-96 rounded-md border-2 border-gray-300 text-2xl"
+      className="mb-6  h-16 w-96 rounded-md border-2 border-gray-300 text-3xl"
     />
   );
 }
