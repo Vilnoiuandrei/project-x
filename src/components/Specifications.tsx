@@ -18,7 +18,7 @@ interface CarProps {
 
 function Specifications({ car }: CarProps) {
   return (
-    <div className="col-start-1 col-end-3 row-start-3 px-4 lg:col-end-2">
+    <div className="col-start-1 col-end-3 row-start-3 mt-10 px-4 lg:col-end-2">
       <h2 className=" h-10  border-b border-black text-center text-2xl md:h-14 md:text-4xl lg:text-5xl ">
         Specifications
       </h2>

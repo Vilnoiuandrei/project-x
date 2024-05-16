@@ -88,7 +88,7 @@ function CarDetailPage() {
               key={index}
               src={`/img/${image}`}
               alt={`Photo ${index + 1}`}
-              className="col-start-1  col-end-3  mt-1 w-full border border-gray-800 shadow-lg lg:col-auto"
+              className="col-start-1  col-end-3  mt-4 w-full border border-gray-800 shadow-lg lg:col-auto"
             />
           ))}
           <CarDesciption car={car} />
