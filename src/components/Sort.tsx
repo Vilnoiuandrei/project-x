@@ -1,5 +1,3 @@
-import { FaSort } from "react-icons/fa";
-
 interface SortProps {
   sort: string;
   setSort: (value: string) => void;
