@@ -15,6 +15,7 @@ function Sort({ sort, setSort }: SortProps) {
         }}
       >
         <option value="">Default</option>
+        <option value="-likes">Popular</option>
         <option value="-horsePower">Power(Hi to low)</option>
         <option value="horsePower">Power(Low to hi)</option>
         <option value="-price">Price(Hi to low)</option>

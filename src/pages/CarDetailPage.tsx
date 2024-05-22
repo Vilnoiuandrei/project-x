@@ -75,7 +75,7 @@ function CarDetailPage() {
       </div>
 
       <div className="flex justify-center">
-        <div className="max-w-1500px grid  grid-cols-2">
+        <div className="grid max-w-1500px  grid-cols-2">
           <div className="w-ws col-start-1 col-end-3 row-start-1 flex justify-center">
             <img
               className="border-2"

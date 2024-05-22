@@ -10,6 +10,7 @@ interface Car {
   price: number;
   topSpeed: number;
   zeroToHundred: number;
+  likes: [string];
 }
 interface CarListPropos {
   cars: Car[];
