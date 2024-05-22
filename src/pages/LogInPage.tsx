@@ -75,8 +75,8 @@ function LogInPage() {
         <Loader />
       ) : (
         <form onSubmit={handleSubmit}>
-          <div className=" mx-auto flex max-w-[500px] flex-col items-center justify-center md:h-auto md:w-96 md:border-2 md:shadow-lg">
-            <div className="w-64 md:w-80">
+          <div className=" mx-auto flex max-w-[500px] flex-col items-center justify-center md:h-auto md:w-auto md:border-2 md:shadow-lg">
+            <div className="w-64 md:w-auto">
               <p className=" mb-10 text-center text-xl md:mt-10 md:text-2xl">
                 {error ? error : "Please log in to your account!"}
               </p>

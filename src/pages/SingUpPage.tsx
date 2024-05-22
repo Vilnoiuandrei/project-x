@@ -75,7 +75,7 @@ function Singup() {
         <Loader />
       ) : (
         <form onSubmit={handleSubmit}>
-          <div className=" mx-auto flex max-w-[500px] flex-col items-center justify-center md:h-auto md:w-96 md:border-2 md:shadow-lg">
+          <div className=" mx-auto flex max-w-[500px] flex-col items-center justify-center md:h-auto md:w-auto md:border-2 md:shadow-lg">
             <div className="w-64 md:w-80">
               <p className="mb-10 text-center text-2xl md:mt-12">
                 {error ? error : "Create a new account"}
