@@ -1,28 +1,31 @@
+import About from "../components/AboutApp";
+import Button from "../components/Button";
+import Headline from "../components/Headline";
+import { useNavigate } from "react-router-dom";
+
 function Homepage() {
+  const navigate = useNavigate();
+  function handleClick() {
+    navigate("/cars");
+  }
   return (
-    <div
-      className="h-screen font-semibold"
-      style={{
-        backgroundImage: "url(/img/ferrarif40cover.jpg)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <section>
-        <div className="  flex items-center justify-center">
-          <h1 className="mt-16 text-5xl font-bold md:text-7xl">
-            Welcome to <span className="text-red-600">Car</span>Hub
-          </h1>
+    <div className="h-screen">
+      <video
+        autoPlay
+        loop
+        muted
+        className="  absolute left-1/2 top-1/2 -z-10 h-full w-full -translate-x-1/2 -translate-y-1/2 transform object-cover"
+      >
+        <source src="/video/bgvideo.mov" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div>
+        <Headline />
+        <About />
+        <div className="mt-40 flex justify-center">
+          <Button onClick={handleClick}>Explore Cars</Button>
         </div>
-        <div className="mt-28 px-14">
-          <p className="mb-4  text-2xl  md:text-4xl">
-            Explore our vast collection of car specifications, browse through
-            stunning images, and connect with fellow enthusiasts. At CarHub,
-            we're passionate about cars, and we're here to fuel your passion
-            too.
-          </p>
-        </div>
-      </section>
+      </div>
     </div>
   );
 }
