@@ -17,7 +17,7 @@ function Homepage() {
         className="  absolute left-1/2 top-1/2 -z-10 h-full w-full -translate-x-1/2 -translate-y-1/2 transform object-cover"
       >
         <source src="/video/bgvideo.mov" type="video/mp4" />
-        Your browser does not support the video tag.
+        Your browser does not support the video tag?
       </video>
       <div>
         <Headline />
