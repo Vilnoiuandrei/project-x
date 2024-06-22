@@ -7,7 +7,7 @@ import Button from "../components/Button";
 import LogMessage from "../components/LogMessage";
 import Loader from "../components/Loader";
 
-function Singup() {
+function SignUp() {
   const { logIn, setLogIn } = useContext(LogInContex);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -113,11 +113,11 @@ function Singup() {
               value={passwordConfirm}
               onChange={(e) => setPasswordConfirm(e.target.value)}
             />
-            <Button>Sing In</Button>
+            <Button>Sign In</Button>
           </div>
         </form>
       )}
     </div>
   );
 }
-export default Singup;
+export default SignUp;

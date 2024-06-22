@@ -102,7 +102,7 @@ function LogInPage() {
             <p className="mt-5 text-xl md:mb-12">
               You don't have an account?
               <span className="text-2xl text-red-700">
-                <Link to={"/singup"}>Sing Up</Link>
+                <Link to={"/signUp"}>Sign Up</Link>
               </span>
             </p>
           </div>

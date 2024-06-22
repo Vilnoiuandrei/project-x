@@ -4,7 +4,7 @@ import ProtectRoute from "./components/ProtectRoute";
 import Homepage from "./pages/HomePage";
 import PageNotFound from "./pages/PageNotFound";
 import LogInPage from "./pages/LogInPage";
-import SingUpPage from "./pages/SingUpPage";
+import SingUpPage from "./pages/SignUpPage";
 import { jwtDecode } from "jwt-decode";
 import Cookies from "js-cookie";
 import PageNav from "./components/PageNav";
@@ -65,7 +65,7 @@ function App() {
               <Route path="/" element={<Homepage />} />
 
               <Route path="logIn" element={<LogInPage />} />
-              <Route path="singUp" element={<SingUpPage />} />
+              <Route path="signUp" element={<SingUpPage />} />
               <Route
                 path="cars"
                 element={
