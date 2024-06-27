@@ -11,7 +11,7 @@ function Homepage() {
   return (
     <div className="h-screen">
       <img
-        src="/img/porche911gt3img2.jpg"
+        src="/img/porche911gt3img2.avif"
         alt="Porche 911 GT3"
         className="absolute left-1/2 top-1/2 -z-10 h-full w-full -translate-x-1/2 -translate-y-1/2 transform object-cover"
       />
