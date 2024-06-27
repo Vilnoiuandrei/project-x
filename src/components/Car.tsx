@@ -30,7 +30,7 @@ function Car({ car }: CarProps) {
           alt={`${car.manufacturer}${car.model}poster`}
         />
 
-        <h3 className=" flex justify-center text-2xl md:text-4xl">
+        <h3 className=" flex justify-center text-2xl md:text-3xl">
           {`${car.manufacturer} ${car.model} ${car.variant} ${car.year}`}
         </h3>
 
