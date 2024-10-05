@@ -16,10 +16,10 @@ function Sort({ sort, setSort }: SortProps) {
       >
         <option value="">Default</option>
         <option value="-likes">Popular</option>
-        <option value="-horsePower">Power(Hi to low)</option>
-        <option value="horsePower">Power(Low to hi)</option>
-        <option value="-price">Price(Hi to low)</option>
-        <option value="price">Price(Low to hi)</option>
+        <option value="-horsePower">Power(High to low)</option>
+        <option value="horsePower">Power(Low to high)</option>
+        <option value="-price">Price(High to low)</option>
+        <option value="price">Price(Low to high)</option>
         <option value="-year">Year(New to old)</option>
         <option value="year">Year(Old to new)</option>
       </select>
